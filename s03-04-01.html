@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Math.floor(3.5));//3
+        console.log(Math.ceil(3.5));//4
+        console.log(Math.floor(-3.5));//-4
+        console.log(Math.ceil(-3.5));//-3
+        // 3indama t9om bi kitabt 3adad mitl 1.2.3.4.5 ... laa yatghayr.
+        console.log("------------");
+        console.log(Math.trunc(3.5));//3
+        console.log(Math.trunc(-3.5));//-3
+        console.log("------------");
+        console.log(Math.round(3.828));//4
+        console.log(Math.round(3.128));//3
+        console.log(Math.round(3.5));//4
+        console.log("------------");
+        console.log(Math.max(3,2,8,-1,6));//8
+        console.log(Math.min(3,2,8,-1,6));//-1
+        console.log("------------");
+        console.log(Math.pow(4,3));//64
+        console.log(Math.sqrt(4));//2
+        console.log("------------");
+        let x=Math.random()
+        console.log(x);
+        console.log(Math.sqrt(2).toFixed(2));//il donne que 2nombre apres la vergule
+        console.log(Math.trunc(x*10));//il doit multiplie le nombre precendent sans vergule
+        console.log("------------");
+        let encore=true;
+        do{
+            let nom=prompt("Entrer un nom");
+            alert("Bonjour Mr " + nom);
+            encore=confirm("voulez vous continuer");
+
+        }while(encore);
+        console.log("-----")
+        let num
+        do{
+            let num1=prompt("Entrer 1er nombre");
+            let num2=prompt("Entrer 2eme nombre");
+            alert("la somme est:" num1 + num2);
+            encore=confirm("voulez vous continuer");
+
+        }while(num);
+    </script>
+</body>
+</html>
